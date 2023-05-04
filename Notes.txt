@@ -1,0 +1,30 @@
+Important Terms 
+************************************************************************
+
+1. navigator -- Property of window object that contains the info of our browser.
+
+2. mediaDevices -- P
+rovides access to media devices like camera, audio, microphone i.e allows access for any hardware source of media devices.
+
+3. getUserMedia(); -- With the user's permission through a prompt, turns on a camera and/or a microphone on the system and provides a MediaStream containing a video track and/or an audio track with the input. 
+
+4. .then((stream)) -- everything that is beeing captured is passed as a stream here so that we can do anything.
+
+5. MediaRecorder -- The Media Recorder interface of the MediaStream Recording API provides functionality to easily record media. It is creared using MediaRecorder() constructor.
+
+6. MediaStream -- interface represent a stream of media content. A stream consists of several tracks such as video or audio tracks. Each track is specified as instance of MediaStreamTrack.
+
+7. Stream(Data) -- here the data chunks are in the form of bricks or we can say small parts of chunks (tukde k form me).
+
+8. video -- Collection of frames , taking out 1 frame is called as image.
+
+9. Canvas API -- The Canvas API provides a means for drawing graphics via JavaScript and the HTML <canvas> element. Among other things, it can be used for animation, game graphics, data visualization, photo manipulation, and real-time video processing.
+
+10. getContext() -- The HTMLCanvasElement.getContext() method returns a drawing context on the canvas, or null if the context identifier is not supported, or the canvas has already been set to a different context mode.
+
+
+
+
+Related to database -->
+
+11. Object Store can be created only in the uogradedneed event 

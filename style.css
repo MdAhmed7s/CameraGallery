@@ -1,0 +1,174 @@
+/* Default Style */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Styling Video Cont */
+.video-cont{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+/* Styling Video Tag */
+video{
+  height: 100vh;
+  width: 100vw;
+}
+
+
+/* Styling Action Button Containing Full */
+.action-cont{
+  height: 12rem;
+  width: 5rem;
+  
+  position: absolute;
+  top: calc((100vh - 12rem) / 2 );
+  right: 5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.action-cont > *{
+  width: 100%;
+  height: 5rem;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling the button it self */
+.record-btn{
+  background-color: red;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+.capture-btn{
+  background-color: white;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+/* Animation to record and capture button */
+
+/* Animation for Record Button*/
+.scale-record{
+  animation-name: scale-record;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+/* Providing Animation Work */
+@keyframes scale-record{
+  0%{
+    transform: scale(0.7);  /* For Shrinking */
+  }
+  100%{
+    transform: scale(1.2); /* For Enlarging */
+  }
+}
+
+/* Animation for Capture Button */
+.scale-capture{
+  animation-name:scale-capture;
+  animation-iteration-count: 1;
+  animation-duration: 3ms;
+}
+/* Providing Animation */
+@keyframes scale-capture{
+  0%{
+    transform: scale(0.7);
+  }
+  100%{
+    transform: scale(1.2);
+  }
+}
+
+/* Styling the timer-cont */
+.timer-cont{
+  position: absolute;
+  bottom: 10rem;
+  left: 5rem;
+  color:rgb(251, 7, 7);
+  font-size: 1rem;
+}
+
+.timer{
+  display: none;
+}
+
+
+/* Styling The Filter Container */
+.filter-cont{
+  position: absolute;
+  top: calc((100vh - 16rem) / 2 );
+  left: 5rem;
+  height: 16rem;
+  width: 5rem;
+  background-color: chocolate;
+  z-index: 2;
+}
+
+.filter{
+  height: 4rem;
+  background-image: url(https://picsum.photos/seed/picsum/200/300);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: color-burn;
+}
+
+.orange{
+  background-color: #ffa50052;
+}
+
+.brown{
+  background-color: #a52a2a59;
+}
+.pink{
+  background-color: #ffc0cb57;
+}
+.transparent{
+  background-color: transparent;
+}
+
+/* Styling the filter-layer */
+.filter-layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffa50052;
+  z-index: 1;
+
+}
+
+/* Style Gallery Icon */
+.material-icons{
+  color:white;
+  font-size:3rem;
+}
+.gallery{
+  position: absolute;
+  right: 6rem;
+  bottom: 7rem;
+  z-index: 2;
+}
+.gallery:hover{
+  cursor: pointer;
+  font-size: 3.5rem;
+}
